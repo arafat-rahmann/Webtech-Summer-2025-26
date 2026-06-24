@@ -22,7 +22,7 @@ p{
     line-height: 1.5;
 }
 
-/* Table */
+
 table{
     width: 100%;
     border-collapse: collapse;
@@ -48,7 +48,7 @@ td{
     margin: 30px auto;
     background-color: #70f170;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 40px;
 }
 
 .form-box h2{
