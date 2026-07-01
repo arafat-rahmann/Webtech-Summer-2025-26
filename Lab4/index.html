@@ -1,15 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<script src="script.js"></script>
+<html>
+  <head>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <form onsubmit="return setValue();">
+      <script>
+        document.write("<h1>Hello world</h1>");
+        // alert("Hi, click ok to close me");
+      </script>
+      <h1 id="title"></h1>
+      <input type="submit" />
+    </form>
 
-</head>
-<body>
-    
-<h1>Hello!</h1>
-
-</body>
+    <form onsubmit="return validation();">
+      <table>
+        <tr>
+          <td>Username</td>
+          <td>
+            <input type="text" id="username" />
+          </td>
+          <td><p style="color: red" id="usernameErr"></p></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td>
+            <input type="password" id="password" />
+          </td>
+          <td><p style="color: red" id="passwordErr"></p></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
 </html>
