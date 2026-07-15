@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Student Registration Form</h2>
+
+        <form id="studentForm" onsubmit="return collectData()">
+
+            <label>First Name <span>*</span></label><br>
+            <input type="text" id="firstName"><br><br>
+
+            <label>Last Name <span>*</span></label><br>
+            <input type="text" id="lastName"><br><br>
+
+            <label>Student ID <span>*</span></label><br>
+            <input type="text" id="studentId"><br><br>
+
+            <label>Email <span>*</span></label><br>
+            <input type="text" id="email"><br><br>
+
+            <label>Credit Completed <span>*</span></label><br>
+            <input type="number" id="credit"><br><br>
+
+            <label>Department <span>*</span></label><br>
+
+            <select id="department">
+                <option value="">Select Department</option>
+                <option value="CSE">CSE</option>
+                <option value="CS">CS</option>
+                <option value="SE">SE</option>
+                <option value="EEE">EEE</option>
+            </select>
+
+            <br><br>
+
+            <div class="button-central">
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+
+        <br>
+        <br>
+
+
+        <div>
+        <h2>Registered Students</h2>
+
+        <table border="1" id="studentTable">
+
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Student ID</th>
+                <th>Email</th>
+                <th>Credit</th>
+                <th>Department</th>
+            </tr>
+
+        </table>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
